@@ -2,6 +2,11 @@
 
 ### Запуск
 
+Установить виртуальную среду pipenv и все зависимости
+```bash
+pip install pipenv && pipenv install
+```
+
 Перейти в папку проекта и запустить сервер
 ```bash
 python manage.py runserver
