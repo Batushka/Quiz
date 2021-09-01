@@ -1,3 +1,5 @@
+from django.urls import path, include
+
 from django.conf.urls import include, url
 from rest_framework.routers import DefaultRouter
 from rest_framework import permissions
@@ -28,4 +30,5 @@ urlpatterns = [
         schema_view.without_ui(cache_timeout=0),
         name='schema-json'
     ),
+    path('api-auth/', include('rest_framework.urls'))
 ]
